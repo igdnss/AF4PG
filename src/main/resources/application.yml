@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/af4pg
+    username: postgres
+    password: postgres
+    platform: POSTGRESQL
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: assign_id
+      capital-mode: true
+
+logging:
+  level:
+    com.baomidou.samples.metainfo: debug
